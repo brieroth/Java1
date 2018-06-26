@@ -2,7 +2,7 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         //hello world as a variable
-      /*  String hW = "Hello World";
+      /*String hW = "Hello World";
         System.out.println(hW);
 
 
@@ -13,6 +13,7 @@ public class HelloWorld {
         System.out.println(methodA());
         array();
         array2();
+        */
 
 
                     //person class implemented
@@ -25,10 +26,10 @@ public class HelloWorld {
         person2.setAge(21);
         person2.setName("bob");
         person2.setJobTitle("developer");
-        //System.out.println("Name: " + person1.getName() + " Age: " + person1.getAge() + " Job: " + person1.getJobTitle());
+        System.out.println("Name: " + person1.getName() + " Age: " + person1.getAge() + " Job: " + person1.getJobTitle());
 
         System.out.println(calcMethod(20,100));
-        System.out.println(calcMethod(30,200)); */
+        System.out.println(calcMethod(30,200));
         //System.out.println(uniqueSum(2,2,2));
         System.out.println(blackjack(19,20));
         System.out.println(tooHot(76));
