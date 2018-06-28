@@ -1,53 +1,55 @@
 import java.util.Scanner;
 
-public class Vehicle {
-    public static void main(String[] args){
-        int modelYr = 0;
-        String name = " ";
-        int seats = 0;
+public abstract class Vehicle {
 
-        Scanner input = new Scanner(System.in);
+        private String make ;
+        private String colour;
+        private int modelYr;
 
-        //Car Car1 = new Car(modelYr, name);
+        public Vehicle(String make, String colour, int modelYr)
+        {
+            this.make = make;
+            this.colour = colour;
+            this.modelYr = modelYr;
+        }
 
-       // System.out.println("What is the year of the car?");
-       // modelYr = input.nextInt();
+    public String getMake() {
+        return make;
+    }
 
-        System.out.println("What is the name of the car?");
-        input.nextLine();
-        name = input.nextLine();
+    public void setMake(String make) {
+        this.make = make;
+    }
 
-        //System.out.println("What is the number of seats of the car?");
-       // input.nextLine();
-       // seats = input.nextLine();
+    public String getColour() {
+        return colour;
+    }
 
-        System.out.println(name);
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
 
+    public int getModelYr() {
+        return modelYr;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public void setModelYr(int modelYr) {
+        this.modelYr = modelYr;
     }
 
 
-
-
-
-
-
+    @Override
+    public String toString() {
+        return ("Make of car:" + make + " "+ "Colour of car:" + colour + " " + "Model Year:" + modelYr);
+        }
 }
+
+
+
+
+
+
+
+
+
+
