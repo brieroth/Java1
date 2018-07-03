@@ -4,12 +4,12 @@ import java.util.ArrayList;
 public class ShapesMain {
 
     public static void main(String[] args) {
-
+        //scanner input
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter value for square: ");
         String input = sc.nextLine();
 
-        //generate a new double parameter to pass with shapes
+        //generate a new double parameter to pass with shapes BUT MAINLY PARSE STRING AS NUMBER!!!
         double num = Double.parseDouble(input);
 
         Square sq = new Square(num);
