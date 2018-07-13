@@ -13,6 +13,7 @@ public class ShapesMain {
         double num = Double.parseDouble(input);
 
         Square sq = new Square(num);
+
         Rectangle rc = new Rectangle(10.0, 11.0);
         Circle cr = new Circle(5.5);
 

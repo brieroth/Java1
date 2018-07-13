@@ -16,7 +16,8 @@ public class HelloWorld {
         */
 
 
-                    //person class implemented
+
+        //person class implemented
         Person person1 = new Person();
         person1.setAge(23);
         person1.setName("naomi");
@@ -26,13 +27,14 @@ public class HelloWorld {
         person2.setAge(21);
         person2.setName("bob");
         person2.setJobTitle("developer");
-        System.out.println("Name: " + person1.getName() + " Age: " + person1.getAge() + " Job: " + person1.getJobTitle());
+        //System.out.println("Name: " + person1.getName() + " Age: " + person1.getAge() + " Job: " + person1.getJobTitle());
 
-        System.out.println(calcMethod(20,100));
-        System.out.println(calcMethod(30,200));
+        //System.out.println(calcMethod(20,100));
+        //System.out.println(calcMethod(30,200));
         //System.out.println(uniqueSum(2,2,2));
-        System.out.println(blackjack(19,20));
+        //System.out.println(blackjack(19,20));
         System.out.println(tooHot(76));
+        //TooHot(26, true);
 
 
     }
@@ -152,13 +154,15 @@ public class HelloWorld {
     }
 
 
-    //TOO HOT?
+   // TOO HOT?
     static int tooHot(int a) {
         Boolean isSummer = true;
 
         if (a >= 60 && a <= 90) {
             if (isSummer = true) {
+                System.out.println("Summer bby");
                 return (a);
+
             }
         } else {
             return 0;
@@ -166,6 +170,19 @@ public class HelloWorld {
 
         return 0;
     }
+
+    public static boolean TooHot(int temperature, boolean
+    isSummer){
+
+        	if(isSummer) {
+            	if(temperature>=60&& temperature <=90) {
+                		return true;
+                	}
+            	}
+        	return false;
+
+
+        }
 
 
 
